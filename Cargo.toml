@@ -8,3 +8,9 @@ edition = "2021"
 [dependencies]
 screen = { path = "./screen" }
 windows = "0.52.0"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
